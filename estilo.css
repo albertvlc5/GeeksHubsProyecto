@@ -90,8 +90,9 @@ h1 {
 
 #player {
     background-image: url(musicloud.jpg);
-    width: 200px;
+    background-repeat: no-repeat;
     height: 150px;
+    width: 150px;
     border: 2px solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;

@@ -39,7 +39,7 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault();
-
+    ev.target.parentNode.style.backgroundImage = 'url(gifmusica.gif)';
     var identificador = ev.dataTransfer.getData("identificador");
     var srcCancion = ev.dataTransfer.getData("srcCancion");
 
