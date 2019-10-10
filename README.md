@@ -3,7 +3,9 @@
 ## Aplicación web para reproducir canciones a partir de la API de SoundCloud
 
 
-> Introduzca tu artista,
+>
+
+Introduzca tu artista,
 
 arrastra la caratula de la canción deseada hasta el reproductor de musiCloud SC,
 
