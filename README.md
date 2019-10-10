@@ -19,4 +19,6 @@ y disfruta de tu música favorita.
 - Html
 - CSS
 
-  -   Albert Pla © CopyRight musiCloud SC
+<img src="https://tecnologias.png" title="tecnologias" alt="Tecnologias">
+
+                                                                                                   -   Albert Pla © CopyRight musiCloud SC
