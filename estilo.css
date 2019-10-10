@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+#main-header {
+    background: #333;
+    color: white;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+#main-header a {
+    color: white;
+}
+
+#logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+#logo-header:hover {
+    color: #0b76a6;
+}
+
+#logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo-header .site-subname {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.aplicacion {
+    display: flex;
+}
+
+.box {
+    Height: 100vh;
+    flex: 50vw;
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.65vh;
+    flex-wrap: wrap;
+}
+
+.reproductor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 2.65vh;
+    width: 400px;
+    height: 200px;
+    border: solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.editor {
+    height: 100px;
+}
+
+#player {
+    background-image: url(musicloud.jpg);
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input[type=search] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 30%;
+}
+
+button {
+    width: 65px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+    <script src="script.js" async defer>
+    </script>
+    <title>MusiCloud</title>
+</head>
+<header id="main-header">
+    <a id="logo-header">
+        <span class="site-name">Reproductor de Musica</span>
+        <span class="site-subname">MusiCloud</span>
+    </a>
+</header>
+
+<body>
+    <h1><b>&#127925; MusiCloud &#127925; </b></h1>
+    <form class="buscarCancion">
+        <div>
+            &#127926; <input type="search" name="busqueda" placeholder="Introduzca el artista..">
+            <button type="submit">Buscar</button>
+        </div>
+        <!-- <button type="button" onclick="alert('Introduzca el artista, arrastra la canción hasta el reproductor, y disfruta de tu musica ')">InfoAPP</button> -->
+    </form>
+    <div class="aplicacion">
+        <div class="results box">
+        </div>
+        <div class="reproductor box">
+            <img id="player" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true">
+        </div>
+    </div>
+
+</body>
+
+</html>
