@@ -12,6 +12,9 @@ arrastra la caratula de la canción deseada hasta el reproductor de musiCloud SC
 y disfruta de tu música favorita.
 
 
+![Recordit GIF](http://GeeksHubsProyecto/musiCloud.gif)
+
+
 
 **Tecnologias utilizadas:**
 
