@@ -45,10 +45,36 @@ function drop(ev) {
 
     ev.target.src = srcCancion;
 
-
     SC.stream('/tracks/' + identificador).then(function(player) {
         player.play();
     }).catch(function(error) {
         alert('Error : ' + error.message);
     });
+
 }
+
+// var button = document.getElementById("button");
+// var identificador = document.getElementById("identificador");
+
+// button.addEventListener("click", function() {
+//     if (identificador.paused) {
+//         identificador.play();
+//         button.innerHTML = "Pause";
+//     } else {
+//         audio.pause();
+//         button.innerHTML = "Play";
+//     }
+// });
+
+function playPause(ev) {
+    var identificador = ev.dataTransfer.getData("identificador");
+    SC.stream('/tracks/' + identificador).then(function(player) {
+        player.pause();
+    });
+}
+// function playPause(ev) {
+//     var identificador = ev.dataTransfer.getData("identificador");
+
+//     SC.stream('/tracks/' + identificador).then(function(player) {
+//         player.pause();
+//     })};

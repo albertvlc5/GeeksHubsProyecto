@@ -75,7 +75,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #E0E0E0;
     margin: 2.65vh;
     width: 400px;
     height: 200px;
@@ -86,16 +86,21 @@ h1 {
 
 .editor {
     height: 100px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 0px #ccc;
 }
 
 #player {
     background-image: url(musicloud.jpg);
     background-repeat: no-repeat;
-    height: 150px;
+    height: 113px;
     width: 150px;
     border: 2px solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 0px #ccc;
 }
 
 input[type=search] {
@@ -122,4 +127,103 @@ button {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+}
+
+#playPause {
+    background-color: white;
+    margin: 2px;
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0.5px 0.5px 0px #ccc;
+}
+
+
+/* Prueba Modal  */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: grey;
+    color: white;
+    font-weight: italic;
 }

@@ -15,7 +15,7 @@
 <header id="main-header">
     <a id="logo-header">
         <span class="site-name">Reproductor de Musica</span>
-        <span class="site-subname">MusiCloud</span>
+        <span class="site-subname">MusiCloud </span>
     </a>
 </header>
 
@@ -25,17 +25,62 @@
         <div>
             &#127926; <input type="search" name="busqueda" placeholder="Introduzca el artista..">
             <button type="submit">Buscar</button>
+            <button id="modal">Info</button>
+            <!-- <button type="button" onclick="alert('Introduzca el artista, arrastra la canción hasta el reproductor, y disfruta de tu musica ')">Info</button> -->
         </div>
-        <!-- <button type="button" onclick="alert('Introduzca el artista, arrastra la canción hasta el reproductor, y disfruta de tu musica ')">InfoAPP</button> -->
+
     </form>
     <div class="aplicacion">
         <div class="results box">
         </div>
         <div class="reproductor box">
             <img id="player" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true">
+            <button id="playPause" onclick="playPause(event)">Play/Pause</button>
         </div>
     </div>
 
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>MusiCloud</h2>
+            </div>
+            <div class="modal-body">
+                <p>Introduzca tu artista,</p>
+                <p> arrastra la caratula de la canción deseada hasta el reproductor de musiCloud SC,</p>
+                <p> y disfruta de tu música favorita.</p>
+            </div>
+            <div class="modal-footer">
+                <h3> Albert Pla © CopyRight musiCloud SC</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Abre el modal
+        var modal = document.getElementById("miModal");
+
+        var boton = document.getElementById("modal");
+
+        // Para cerrar el modal
+        var span = document.getElementsByClassName("close")[0];
+
+        boton.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        //Click fuera del modal, volvera a nuestra aplicación SC
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
