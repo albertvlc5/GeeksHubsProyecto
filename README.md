@@ -18,3 +18,5 @@ y disfruta de tu música favorita.
 - JavaScript
 - Html
 - CSS
+
+  -   Albert Pla © CopyRight musiCloud SC
