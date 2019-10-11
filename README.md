@@ -22,6 +22,6 @@ y disfruta de tu música favorita.
 - Html
 - CSS
 
-<img src="https://GeeksHubsProyecto/tecnologias.jpg" title="tecnologias" alt="Tecnologias">
+<img src="https://github.com/albertvlc5/GeeksHubsProyecto/blob/master/tecnologias.jpg?raw=true" title="tecnologias" alt="Tecnologias">
 
      - Albert Pla © CopyRight musiCloud SC
