@@ -1,4 +1,5 @@
 var cancion = null;
+var id_antes = null;
 SC.initialize({
     client_id: 'aa06b0630e34d6055f9c6f8beb8e02eb'
 });
@@ -30,6 +31,12 @@ document.querySelector('.buscarCancion').addEventListener('submit', function(eve
 
 function allowDrop(ev) {
     ev.preventDefault();
+
+    let imagenantes = document.querySelector('#player').src;
+    if (player != null) {
+        document.getElementById(id_antes).style.boxShadow = "6px 6px 0px #ccc";
+    }
+
 }
 
 function drag(ev) {
@@ -37,7 +44,7 @@ function drag(ev) {
     ev.dataTransfer.setData("srcCancion", ev.target.src);
 
     // ev.getElementsByClassName(".results").style.WebkitTransform = "rotate(20deg)";
-    // ev.getElementsByClassName(".results").style.boxShadow = "10px 20px 30px rgb(95, 107, 110)";
+    // ev.getElementsByClassName(".results").style.boxShadow = "10px 20px 30px rgb(95, 107, 110)" 
 
 }
 
@@ -47,9 +54,11 @@ function drop(ev) {
     ev.target.parentNode.style.backgroundImage = 'url(gifmusica.gif)';
     var identificador = ev.dataTransfer.getData("identificador");
     var srcCancion = ev.dataTransfer.getData("srcCancion");
-
+    id_antes = identificador;
     ev.target.src = srcCancion;
-
+    // document.getElementById(identificador).style.WebkitTransform = "rotate(360deg)";
+    // document.getElementById(identificador).style.animation = "spin 3s";
+    document.getElementById(identificador).style.boxShadow = "10px 20px 30px 12px rgba(0, 113, 131, 0.5) ";
     SC.stream('/tracks/' + identificador).then(function(player) {
         player.play();
         cancion = player;
@@ -57,7 +66,6 @@ function drop(ev) {
     }).catch(function(error) {
         alert('Error : ' + error.message);
     });
-
 }
 
 function playPause(ev) {
