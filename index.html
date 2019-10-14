@@ -39,6 +39,7 @@
         </div>
     </div>
 
+
     <div id="miModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -57,30 +58,6 @@
 
     </div>
 
-    <script>
-        // Abre el modal
-        var modal = document.getElementById("miModal");
-
-        var boton = document.getElementById("modal");
-
-        // Para cerrar el modal
-        var span = document.getElementsByClassName("close")[0];
-
-        boton.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        //Click fuera del modal, volvera a nuestra aplicación SC
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>

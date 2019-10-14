@@ -82,6 +82,7 @@ h1 {
     border: solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .editor {
@@ -89,6 +90,8 @@ h1 {
     border: 2px solid #ccc;
     box-sizing: border-box;
     box-shadow: 6px 6px 0px #ccc;
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-Shadow: 10px 20px 30px rgb(95, 107, 110); */
 }
 
 #player {
@@ -108,6 +111,7 @@ input[type=search] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: 16px;
     background-color: white;
     background-position: 10px 10px;
@@ -127,6 +131,7 @@ button {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #playPause {
@@ -156,9 +161,6 @@ button {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-
-/* Modal Content */
 
 .modal-content {
     position: relative;

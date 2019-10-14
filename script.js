@@ -23,6 +23,7 @@ document.querySelector('.buscarCancion').addEventListener('submit', function(eve
                 };
                 imagen.classList.add('editor');
                 document.querySelector('.results').append(imagen);
+
             }
         })
 })
@@ -31,10 +32,13 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
-
 function drag(ev) {
     ev.dataTransfer.setData("identificador", ev.target.id);
     ev.dataTransfer.setData("srcCancion", ev.target.src);
+
+    // ev.getElementsByClassName(".results").style.WebkitTransform = "rotate(20deg)";
+    // ev.getElementsByClassName(".results").style.boxShadow = "10px 20px 30px rgb(95, 107, 110)";
+
 }
 
 
@@ -62,5 +66,27 @@ function playPause(ev) {
         cancion.play();
     } else {
         cancion.pause();
+    }
+}
+
+var modal = document.getElementById("miModal");
+
+var botoncerrar = document.getElementById("modal");
+
+// Para cerrar el modal
+var span = document.getElementsByClassName("close")[0];
+
+botoncerrar.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+//Click fuera del modal, volvera a nuestra aplicación SC
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
